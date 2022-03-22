@@ -58,6 +58,13 @@ func (g *Circle) MarshalJSON() ([]byte, error) {
 	return g.AppendJSON(nil), nil
 }
 
+func (g *Circle) UnmarshalJSON(data []byte) error {
+	var err error
+	obj, err := Parse(string(data), nil)
+	g = obj.(*Circle)
+	return err
+}
+
 // String ...
 func (g *Circle) String() string {
 	return string(g.AppendJSON(nil))

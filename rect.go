@@ -61,6 +61,13 @@ func (g *Rect) MarshalJSON() ([]byte, error) {
 	return g.AppendJSON(nil), nil
 }
 
+func (g *Rect) UnmarshalJSON(data []byte) error {
+	var err error
+	obj, err := Parse(string(data), nil)
+	g = obj.(*Rect)
+	return err
+}
+
 // String ...
 func (g *Rect) String() string {
 	return string(g.AppendJSON(nil))

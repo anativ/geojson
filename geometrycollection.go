@@ -50,6 +50,13 @@ func (g *GeometryCollection) MarshalJSON() ([]byte, error) {
 	return g.AppendJSON(nil), nil
 }
 
+func (g *GeometryCollection) UnmarshalJSON(data []byte) error {
+	var err error
+	obj, err := Parse(string(data), nil)
+	g = obj.(*GeometryCollection)
+	return err
+}
+
 func parseJSONGeometryCollection(
 	keys *parseKeys, opts *ParseOptions,
 ) (Object, error) {

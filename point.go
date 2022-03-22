@@ -78,6 +78,13 @@ func (g *Point) MarshalJSON() ([]byte, error) {
 	return g.AppendJSON(nil), nil
 }
 
+func (g *Point) UnmarshalJSON(data []byte) error {
+	var err error
+	obj, err := Parse(string(data), nil)
+	g = obj.(*Point)
+	return err
+}
+
 // String ...
 func (g *Point) String() string {
 	return string(g.AppendJSON(nil))

@@ -95,6 +95,13 @@ func (g *collection) MarshalJSON() ([]byte, error) {
 	return g.AppendJSON(nil), nil
 }
 
+func (g *collection) UnmarshalJSON(data []byte) error {
+	var err error
+	obj, err := Parse(string(data), nil)
+	g = obj.(*collection)
+	return err
+}
+
 // String ...
 func (g *collection) String() string {
 	return string(g.AppendJSON(nil))

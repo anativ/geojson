@@ -68,6 +68,13 @@ func (g *Polygon) MarshalJSON() ([]byte, error) {
 	return g.AppendJSON(nil), nil
 }
 
+func (g *Polygon) UnmarshalJSON(data []byte) error {
+	var err error
+	obj, err := Parse(string(data), nil)
+	g = obj.(*Polygon)
+	return err
+}
+
 // String ...
 func (g *Polygon) String() string {
 	return string(g.AppendJSON(nil))

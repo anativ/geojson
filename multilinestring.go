@@ -63,6 +63,13 @@ func (g *MultiLineString) MarshalJSON() ([]byte, error) {
 	return g.AppendJSON(nil), nil
 }
 
+func (g *MultiLineString) UnmarshalJSON(data []byte) error {
+	var err error
+	obj, err := Parse(string(data), nil)
+	g = obj.(*MultiLineString)
+	return err
+}
+
 func parseJSONMultiLineString(
 	keys *parseKeys, opts *ParseOptions,
 ) (Object, error) {

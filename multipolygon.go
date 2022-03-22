@@ -62,6 +62,13 @@ func (g *MultiPolygon) MarshalJSON() ([]byte, error) {
 	return g.AppendJSON(nil), nil
 }
 
+func (g *MultiPolygon) UnmarshalJSON(data []byte) error {
+	var err error
+	obj, err := Parse(string(data), nil)
+	g = obj.(*MultiPolygon)
+	return err
+}
+
 func parseJSONMultiPolygon(
 	keys *parseKeys, opts *ParseOptions,
 ) (Object, error) {

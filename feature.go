@@ -98,6 +98,13 @@ func (g *Feature) MarshalJSON() ([]byte, error) {
 	return g.AppendJSON(nil), nil
 }
 
+func (g *Feature) UnmarshalJSON(data []byte) error {
+	var err error
+	obj, err := Parse(string(data), nil)
+	g = obj.(*Feature)
+	return err
+}
+
 // Spatial ...
 func (g *Feature) Spatial() Spatial {
 	return g

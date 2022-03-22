@@ -67,6 +67,13 @@ func (g *LineString) MarshalJSON() ([]byte, error) {
 	return g.AppendJSON(nil), nil
 }
 
+func (g *LineString) UnmarshalJSON(data []byte) error {
+	var err error
+	obj, err := Parse(string(data), nil)
+	g = obj.(*LineString)
+	return err
+}
+
 // Spatial ...
 func (g *LineString) Spatial() Spatial {
 	return g

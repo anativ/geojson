@@ -51,6 +51,13 @@ func (g *MultiPoint) MarshalJSON() ([]byte, error) {
 	return g.AppendJSON(nil), nil
 }
 
+func (g *MultiPoint) UnmarshalJSON(data []byte) error {
+	var err error
+	obj, err := Parse(string(data), nil)
+	g = obj.(*MultiPoint)
+	return err
+}
+
 func parseJSONMultiPoint(keys *parseKeys, opts *ParseOptions) (Object, error) {
 	var g MultiPoint
 	var err error

@@ -44,6 +44,7 @@ type Object interface {
 	ForEach(iter func(geom Object) bool) bool
 	Spatial() Spatial
 	MarshalJSON() ([]byte, error)
+	UnmarshalJSON(data []byte) error
 }
 
 var _ = []Object{
