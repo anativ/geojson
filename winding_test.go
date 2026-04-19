@@ -82,6 +82,37 @@ func TestMultiPolygonRequireWindingRejects(t *testing.T) {
 	expectJSONOpts(t, in, errCoordinatesInvalid, &ParseOptions{RequireWinding: true})
 }
 
+// Degenerate rings (zero signed area) carry no orientation and must be
+// accepted by RequireWinding rather than rejected.
+func TestPolygonRequireWindingAcceptsDegenerate(t *testing.T) {
+	in := `{"type":"Polygon","coordinates":[[[0,0],[5,5],[10,10],[0,0]]]}`
+	expectJSONOpts(t, in, in, &ParseOptions{RequireWinding: true})
+}
+
+// Polygon with a hole plus z-coords: exercises pointOffset advancing across
+// the exterior before reversing the hole's slice of extra.values.
+func TestPolygonFixWindingHoleWithZ(t *testing.T) {
+	in := `{"type":"Polygon","coordinates":[` +
+		`[[0,0,1],[10,0,2],[10,10,3],[0,10,4],[0,0,1]],` +
+		`[[2,2,5],[8,2,6],[8,8,7],[2,8,8],[2,2,5]]]}`
+	want := `{"type":"Polygon","coordinates":[` +
+		`[[0,0,1],[10,0,2],[10,10,3],[0,10,4],[0,0,1]],` +
+		`[[2,2,5],[2,8,8],[8,8,7],[8,2,6],[2,2,5]]]}`
+	expectJSONOpts(t, in, want, &ParseOptions{FixWinding: true})
+}
+
+// MultiPolygon where each sub-polygon carries its own z-values: confirms the
+// per-polygon offset resets between children (each child has its own extra).
+func TestMultiPolygonFixWindingPerChildZ(t *testing.T) {
+	in := `{"type":"MultiPolygon","coordinates":[` +
+		`[[[0,0,1],[0,10,2],[10,10,3],[10,0,4],[0,0,1]]],` +
+		`[[[20,0,5],[30,0,6],[30,10,7],[20,10,8],[20,0,5]]]]}`
+	want := `{"type":"MultiPolygon","coordinates":[` +
+		`[[[0,0,1],[10,0,4],[10,10,3],[0,10,2],[0,0,1]]],` +
+		`[[[20,0,5],[30,0,6],[30,10,7],[20,10,8],[20,0,5]]]]}`
+	expectJSONOpts(t, in, want, &ParseOptions{FixWinding: true})
+}
+
 func TestRingOrientation(t *testing.T) {
 	ccw := []geometry.Point{{X: 0, Y: 0}, {X: 10, Y: 0}, {X: 10, Y: 10}, {X: 0, Y: 10}, {X: 0, Y: 0}}
 	cw := []geometry.Point{{X: 0, Y: 0}, {X: 0, Y: 10}, {X: 10, Y: 10}, {X: 10, Y: 0}, {X: 0, Y: 0}}

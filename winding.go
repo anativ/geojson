@@ -6,6 +6,8 @@ import "github.com/tidwall/geojson/geometry"
 // degenerate rings (zero signed area or fewer than three distinct points).
 // GeoJSON uses geographic coordinates with latitude (Y) increasing northward,
 // so the standard Cartesian shoelace sign convention matches RFC 7946 §3.1.6.
+// This is a planar computation: rings that cross the antimeridian (±180°
+// longitude) may be classified with the wrong sign.
 func ringOrientation(pts []geometry.Point) int {
 	n := len(pts)
 	if n < 3 {
@@ -40,6 +42,10 @@ func reverseExtraRange(ex *extra, pointOffset, nPoints int) {
 	}
 	dims := int(ex.dims)
 	base := pointOffset * dims
+	end := base + nPoints*dims
+	if base < 0 || end > len(ex.values) {
+		return
+	}
 	for i, j := 0, nPoints-1; i < j; i, j = i+1, j-1 {
 		for k := 0; k < dims; k++ {
 			ex.values[base+i*dims+k], ex.values[base+j*dims+k] =
