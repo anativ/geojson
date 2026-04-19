@@ -103,6 +103,16 @@ type ParseOptions struct {
 	// exactly 5 points with the first point being the min x/y and the
 	// following point winding counter clockwise creating a closed rectangle.
 	AllowRects bool
+	// FixWinding rewrites Polygon and MultiPolygon rings during parse so they
+	// follow RFC 7946 §3.1.6: exterior rings counterclockwise, holes clockwise.
+	// Rings already compliant (or degenerate with zero signed area) are left
+	// untouched. Cannot be combined with RequireWinding.
+	FixWinding bool
+	// RequireWinding causes parse to fail when a Polygon or MultiPolygon ring
+	// violates RFC 7946 §3.1.6 winding (exterior CCW, holes CW). Degenerate
+	// rings with zero signed area are not rejected. Cannot be combined with
+	// FixWinding.
+	RequireWinding bool
 }
 
 var DefaultParseOptions = &ParseOptions{
@@ -113,6 +123,8 @@ var DefaultParseOptions = &ParseOptions{
 	AllowSimplePoints: false,
 	DisableCircleType: false,
 	AllowRects:        false,
+	FixWinding:        false,
+	RequireWinding:    false,
 }
 
 // Parse a GeoJSON object
