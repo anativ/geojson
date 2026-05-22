@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#1a1a2e" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Germany Trip" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🇩🇪%3C/text%3E%3C/svg%3E" />
+  <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%231a1a2e'/%3E%3Ctext y='.9em' font-size='80' x='10'%3E🇩🇪%3C/text%3E%3C/svg%3E" />
+  <title>Germany Trip</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">
+        <span class="flag">🇩🇪</span>
+        <div>
+          <div class="brand-title" id="brand-title">Germany Trip</div>
+          <div class="brand-sub" id="brand-sub">Loading…</div>
+        </div>
+      </div>
+      <button id="refresh-btn" class="icon-btn" aria-label="Refresh data">⟳</button>
+    </div>
+  </header>
+
+  <main id="content">
+    <div class="loading">
+      <div class="spinner"></div>
+      <p>Loading trip…</p>
+    </div>
+  </main>
+
+  <nav class="tabbar" role="tablist">
+    <button class="tab active" data-tab="overview" role="tab" aria-selected="true">
+      <span class="tab-icon">🗺️</span><span>Overview</span>
+    </button>
+    <button class="tab" data-tab="itinerary" role="tab" aria-selected="false">
+      <span class="tab-icon">📅</span><span>Days</span>
+    </button>
+    <button class="tab" data-tab="recommendations" role="tab" aria-selected="false">
+      <span class="tab-icon">⭐</span><span>Recs</span>
+    </button>
+    <button class="tab" data-tab="tips" role="tab" aria-selected="false">
+      <span class="tab-icon">💡</span><span>Tips</span>
+    </button>
+  </nav>
+
+  <script src="app.js"></script>
+</body>
+</html>

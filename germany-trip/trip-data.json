@@ -1,0 +1,282 @@
+{
+  "trip": {
+    "title": "Germany 2026",
+    "subtitle": "Two weeks across Germany",
+    "dates": "June 1 – June 14, 2026",
+    "travelers": "Alon & family",
+    "currency": "EUR (€)",
+    "language": "German / English widely spoken",
+    "emergency": "112 (police/medical/fire)",
+    "lastUpdated": "2026-05-22"
+  },
+  "overview": [
+    { "city": "Berlin", "nights": 4, "icon": "🏛️" },
+    { "city": "Dresden", "nights": 2, "icon": "🎨" },
+    { "city": "Munich", "nights": 3, "icon": "🍺" },
+    { "city": "Rothenburg ob der Tauber", "nights": 1, "icon": "🏰" },
+    { "city": "Heidelberg", "nights": 1, "icon": "🌉" },
+    { "city": "Rhine Valley / Cologne", "nights": 2, "icon": "⛪" },
+    { "city": "Frankfurt (departure)", "nights": 0, "icon": "✈️" }
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "date": "Jun 1 (Mon)",
+      "city": "Berlin",
+      "title": "Arrival in Berlin",
+      "summary": "Land at BER, check in, easy first evening.",
+      "activities": [
+        { "time": "Afternoon", "name": "Arrive at Berlin Brandenburg Airport (BER)", "map": "https://maps.google.com/?q=Berlin+Brandenburg+Airport" },
+        { "time": "Evening", "name": "Check into hotel in Mitte", "map": "https://maps.google.com/?q=Mitte+Berlin" },
+        { "time": "Dinner", "name": "Walk around Hackescher Markt — easy first meal", "map": "https://maps.google.com/?q=Hackescher+Markt+Berlin" }
+      ],
+      "tips": "Buy a Berlin WelcomeCard at the airport — covers transit + museum discounts."
+    },
+    {
+      "day": 2,
+      "date": "Jun 2 (Tue)",
+      "city": "Berlin",
+      "title": "Berlin: History walk",
+      "summary": "The iconic Cold War & WWII landmarks on foot.",
+      "activities": [
+        { "time": "09:00", "name": "Brandenburg Gate", "map": "https://maps.google.com/?q=Brandenburg+Gate" },
+        { "time": "09:30", "name": "Reichstag Building (book dome tour in advance!)", "map": "https://maps.google.com/?q=Reichstag+Building" },
+        { "time": "11:00", "name": "Memorial to the Murdered Jews of Europe", "map": "https://maps.google.com/?q=Memorial+Murdered+Jews+Europe" },
+        { "time": "13:00", "name": "Lunch — Mitte", "map": "https://maps.google.com/?q=lunch+Mitte+Berlin" },
+        { "time": "15:00", "name": "Checkpoint Charlie & DDR Museum", "map": "https://maps.google.com/?q=Checkpoint+Charlie" },
+        { "time": "17:00", "name": "East Side Gallery (Berlin Wall)", "map": "https://maps.google.com/?q=East+Side+Gallery+Berlin" }
+      ],
+      "tips": "Reichstag dome is FREE but you must register online weeks ahead."
+    },
+    {
+      "day": 3,
+      "date": "Jun 3 (Wed)",
+      "city": "Berlin",
+      "title": "Museum Island & Alexanderplatz",
+      "summary": "World-class museums + tower views.",
+      "activities": [
+        { "time": "Morning", "name": "Pergamon Museum / Neues Museum", "map": "https://maps.google.com/?q=Museum+Island+Berlin" },
+        { "time": "Lunch", "name": "Hackescher Markt", "map": "https://maps.google.com/?q=Hackescher+Markt" },
+        { "time": "Afternoon", "name": "Berlin Cathedral (Berliner Dom)", "map": "https://maps.google.com/?q=Berliner+Dom" },
+        { "time": "Late afternoon", "name": "TV Tower (Fernsehturm) — book skip-the-line", "map": "https://maps.google.com/?q=Fernsehturm+Berlin" },
+        { "time": "Evening", "name": "Dinner Prenzlauer Berg", "map": "https://maps.google.com/?q=Prenzlauer+Berg+restaurants" }
+      ],
+      "tips": "Museum Pass Berlin (€32) covers all state museums for 3 days."
+    },
+    {
+      "day": 4,
+      "date": "Jun 4 (Thu)",
+      "city": "Berlin / Potsdam",
+      "title": "Potsdam day trip",
+      "summary": "Sanssouci palace & gardens — 30 min from Berlin by S-Bahn.",
+      "activities": [
+        { "time": "09:00", "name": "S-Bahn S7 to Potsdam Hbf (~40 min)", "map": "https://maps.google.com/?q=Potsdam+Hauptbahnhof" },
+        { "time": "10:00", "name": "Sanssouci Palace", "map": "https://maps.google.com/?q=Sanssouci+Palace" },
+        { "time": "12:30", "name": "Sanssouci Park (picnic)", "map": "https://maps.google.com/?q=Sanssouci+Park" },
+        { "time": "15:00", "name": "Cecilienhof (Potsdam Conference site)", "map": "https://maps.google.com/?q=Cecilienhof+Potsdam" },
+        { "time": "Evening", "name": "Return to Berlin — dinner Kreuzberg", "map": "https://maps.google.com/?q=Kreuzberg+Berlin+restaurants" }
+      ],
+      "tips": "Sanssouci tickets are timed — buy online morning of."
+    },
+    {
+      "day": 5,
+      "date": "Jun 5 (Fri)",
+      "city": "Berlin → Dresden",
+      "title": "Train to Dresden",
+      "summary": "ICE train ~2hr. Afternoon in the rebuilt baroque old town.",
+      "activities": [
+        { "time": "10:00", "name": "ICE train Berlin Hbf → Dresden Hbf", "map": "https://maps.google.com/?q=Berlin+Hauptbahnhof" },
+        { "time": "13:00", "name": "Check in, lunch near Altmarkt", "map": "https://maps.google.com/?q=Altmarkt+Dresden" },
+        { "time": "15:00", "name": "Frauenkirche", "map": "https://maps.google.com/?q=Frauenkirche+Dresden" },
+        { "time": "16:30", "name": "Brühl's Terrace (Balcony of Europe)", "map": "https://maps.google.com/?q=Brühlsche+Terrasse" },
+        { "time": "Evening", "name": "Dinner Neustadt district", "map": "https://maps.google.com/?q=Dresden+Neustadt+restaurants" }
+      ],
+      "tips": "Book ICE tickets early on bahn.de — 'Sparpreis' fares are huge savings."
+    },
+    {
+      "day": 6,
+      "date": "Jun 6 (Sat)",
+      "city": "Dresden",
+      "title": "Saxon Switzerland day trip",
+      "summary": "Bastei Bridge & sandstone cliffs — one of Germany's best views.",
+      "activities": [
+        { "time": "08:30", "name": "S-Bahn S1 to Kurort Rathen (~40 min)", "map": "https://maps.google.com/?q=Kurort+Rathen" },
+        { "time": "10:00", "name": "Hike to Bastei Bridge", "map": "https://maps.google.com/?q=Bastei+Bridge" },
+        { "time": "13:00", "name": "Lunch with a view", "map": "https://maps.google.com/?q=Bastei+restaurant" },
+        { "time": "16:00", "name": "Back to Dresden — Zwinger Palace", "map": "https://maps.google.com/?q=Zwinger+Palace+Dresden" },
+        { "time": "Evening", "name": "Semperoper area dinner", "map": "https://maps.google.com/?q=Semperoper" }
+      ],
+      "tips": "Wear proper shoes — Bastei involves real hiking on stone paths."
+    },
+    {
+      "day": 7,
+      "date": "Jun 7 (Sun)",
+      "city": "Dresden → Munich",
+      "title": "Train to Munich",
+      "summary": "Long travel day (~5–6 hrs). Easy evening in Munich.",
+      "activities": [
+        { "time": "Morning", "name": "Train Dresden → Munich Hbf", "map": "https://maps.google.com/?q=München+Hauptbahnhof" },
+        { "time": "Afternoon", "name": "Check in, walk Marienplatz", "map": "https://maps.google.com/?q=Marienplatz+Munich" },
+        { "time": "Evening", "name": "Hofbräuhaus dinner (touristy but essential once)", "map": "https://maps.google.com/?q=Hofbräuhaus+Munich" }
+      ],
+      "tips": "Consider a connection via Nuremberg — quick stop possible for lunch."
+    },
+    {
+      "day": 8,
+      "date": "Jun 8 (Mon)",
+      "city": "Munich",
+      "title": "Munich highlights",
+      "summary": "Old town, royal palace, beer garden afternoon.",
+      "activities": [
+        { "time": "10:00", "name": "Glockenspiel show at Marienplatz (11:00)", "map": "https://maps.google.com/?q=Glockenspiel+Marienplatz" },
+        { "time": "11:30", "name": "Viktualienmarkt (food market)", "map": "https://maps.google.com/?q=Viktualienmarkt" },
+        { "time": "13:00", "name": "Residenz Palace", "map": "https://maps.google.com/?q=Munich+Residenz" },
+        { "time": "16:00", "name": "Englischer Garten — surfers at Eisbach + beer garden", "map": "https://maps.google.com/?q=Englischer+Garten+Munich" },
+        { "time": "Evening", "name": "Augustiner-Keller beer garden", "map": "https://maps.google.com/?q=Augustiner+Keller+Munich" }
+      ],
+      "tips": "Most museums closed Monday — Residenz is open."
+    },
+    {
+      "day": 9,
+      "date": "Jun 9 (Tue)",
+      "city": "Munich / Neuschwanstein",
+      "title": "Neuschwanstein Castle day trip",
+      "summary": "The fairy-tale castle — 2 hr each way by train + bus.",
+      "activities": [
+        { "time": "07:30", "name": "Train Munich → Füssen (~2 hr)", "map": "https://maps.google.com/?q=Füssen+Bahnhof" },
+        { "time": "10:00", "name": "Bus 73/78 to Hohenschwangau village", "map": "https://maps.google.com/?q=Hohenschwangau" },
+        { "time": "11:00", "name": "Neuschwanstein Castle tour (pre-booked!)", "map": "https://maps.google.com/?q=Neuschwanstein+Castle" },
+        { "time": "13:30", "name": "Marienbrücke for the iconic photo", "map": "https://maps.google.com/?q=Marienbrücke+Neuschwanstein" },
+        { "time": "15:00", "name": "Optional: Hohenschwangau Castle", "map": "https://maps.google.com/?q=Hohenschwangau+Castle" },
+        { "time": "Evening", "name": "Return to Munich", "map": "https://maps.google.com/?q=München+Hauptbahnhof" }
+      ],
+      "tips": "Castle tickets MUST be reserved weeks in advance at hohenschwangau.de. Bayern Ticket covers all regional trains for the day."
+    },
+    {
+      "day": 10,
+      "date": "Jun 10 (Wed)",
+      "city": "Munich → Rothenburg",
+      "title": "Rothenburg ob der Tauber",
+      "summary": "Best preserved medieval walled town in Germany.",
+      "activities": [
+        { "time": "Morning", "name": "Train Munich → Rothenburg (change at Steinach)", "map": "https://maps.google.com/?q=Rothenburg+ob+der+Tauber+Bahnhof" },
+        { "time": "Afternoon", "name": "Walk the town walls", "map": "https://maps.google.com/?q=Rothenburg+town+walls" },
+        { "time": "Late afternoon", "name": "Plönlein (the famous postcard corner)", "map": "https://maps.google.com/?q=Plönlein+Rothenburg" },
+        { "time": "20:00", "name": "Night Watchman's Tour (English, daily 8pm)", "map": "https://maps.google.com/?q=Marktplatz+Rothenburg" }
+      ],
+      "tips": "Try the local Schneeballen pastry. Stay inside the walls — magical at night."
+    },
+    {
+      "day": 11,
+      "date": "Jun 11 (Thu)",
+      "city": "Rothenburg → Heidelberg",
+      "title": "Heidelberg",
+      "summary": "Romantic university town, castle ruins, Old Bridge.",
+      "activities": [
+        { "time": "Morning", "name": "Train to Heidelberg (~3 hr w/ changes)", "map": "https://maps.google.com/?q=Heidelberg+Hauptbahnhof" },
+        { "time": "Afternoon", "name": "Heidelberg Castle (funicular up)", "map": "https://maps.google.com/?q=Heidelberg+Castle" },
+        { "time": "Late afternoon", "name": "Old Bridge (Alte Brücke)", "map": "https://maps.google.com/?q=Alte+Brücke+Heidelberg" },
+        { "time": "Sunset", "name": "Philosophenweg walk for castle views", "map": "https://maps.google.com/?q=Philosophenweg+Heidelberg" },
+        { "time": "Evening", "name": "Hauptstraße restaurants", "map": "https://maps.google.com/?q=Hauptstraße+Heidelberg" }
+      ],
+      "tips": "Walk the Philosophers' Way at golden hour — best castle photos."
+    },
+    {
+      "day": 12,
+      "date": "Jun 12 (Fri)",
+      "city": "Heidelberg → Rhine Valley → Cologne",
+      "title": "Rhine River cruise",
+      "summary": "Castles, vineyards, Loreley Rock — the romantic Rhine.",
+      "activities": [
+        { "time": "08:30", "name": "Train to Bingen am Rhein", "map": "https://maps.google.com/?q=Bingen+am+Rhein" },
+        { "time": "10:00", "name": "KD Rhine cruise Bingen → St. Goar", "map": "https://maps.google.com/?q=KD+Rhine+cruise" },
+        { "time": "13:00", "name": "Lunch in St. Goar, see Burg Rheinfels", "map": "https://maps.google.com/?q=Burg+Rheinfels" },
+        { "time": "15:00", "name": "Train to Cologne (~1.5 hr)", "map": "https://maps.google.com/?q=Köln+Hauptbahnhof" },
+        { "time": "Evening", "name": "Cologne Cathedral at sunset", "map": "https://maps.google.com/?q=Cologne+Cathedral" }
+      ],
+      "tips": "Cruise sweet spot is Bingen → St. Goar — Loreley Rock + most castles."
+    },
+    {
+      "day": 13,
+      "date": "Jun 13 (Sat)",
+      "city": "Cologne",
+      "title": "Cologne",
+      "summary": "Cathedral, Old Town, Kölsch beer.",
+      "activities": [
+        { "time": "Morning", "name": "Cologne Cathedral — climb the south tower (533 steps)", "map": "https://maps.google.com/?q=Cologne+Cathedral" },
+        { "time": "Lunch", "name": "Altstadt traditional brewhouse — try Kölsch beer", "map": "https://maps.google.com/?q=Cologne+Altstadt" },
+        { "time": "Afternoon", "name": "Chocolate Museum", "map": "https://maps.google.com/?q=Schokoladenmuseum+Köln" },
+        { "time": "Late afternoon", "name": "Hohenzollern Bridge (love locks) walk", "map": "https://maps.google.com/?q=Hohenzollernbrücke" },
+        { "time": "Evening", "name": "Rhine promenade dinner", "map": "https://maps.google.com/?q=Rhine+promenade+Cologne" }
+      ],
+      "tips": "Kölsch is served in small 0.2L glasses — waiters refill until you put a coaster on top."
+    },
+    {
+      "day": 14,
+      "date": "Jun 14 (Sun)",
+      "city": "Cologne → Frankfurt → Home",
+      "title": "Departure",
+      "summary": "ICE to Frankfurt Airport (~1 hr direct).",
+      "activities": [
+        { "time": "Morning", "name": "Last walk along the Rhine / breakfast", "map": "https://maps.google.com/?q=Cologne+breakfast" },
+        { "time": "Midday", "name": "ICE Cologne → Frankfurt Flughafen Fernbahnhof", "map": "https://maps.google.com/?q=Frankfurt+Flughafen+Fernbahnhof" },
+        { "time": "Afternoon", "name": "Flight home ✈️", "map": "https://maps.google.com/?q=Frankfurt+Airport" }
+      ],
+      "tips": "Frankfurt long-distance station is INSIDE the airport — very smooth connection."
+    }
+  ],
+  "recommendations": {
+    "food": [
+      { "name": "Currywurst (Berlin)", "where": "Curry 36, Konnopke's Imbiss", "map": "https://maps.google.com/?q=Curry+36+Berlin" },
+      { "name": "Döner Kebab (Berlin invention)", "where": "Mustafa's Gemüse Kebap", "map": "https://maps.google.com/?q=Mustafa+Gemüse+Kebap" },
+      { "name": "Weisswurst breakfast (Munich)", "where": "Any traditional Wirtshaus before noon", "map": "https://maps.google.com/?q=Weisswurst+Munich" },
+      { "name": "Pretzel + Obatzda + beer", "where": "Any Bavarian beer garden", "map": "https://maps.google.com/?q=Bavarian+beer+garden" },
+      { "name": "Schnitzel", "where": "Anywhere — the national dish", "map": "https://maps.google.com/?q=schnitzel+restaurant" },
+      { "name": "Black Forest cake", "where": "Cafe Schäfer (if detour to Triberg)", "map": "https://maps.google.com/?q=Cafe+Schäfer+Triberg" },
+      { "name": "Kölsch beer", "where": "Cologne brewhouses (Päffgen, Früh)", "map": "https://maps.google.com/?q=Päffgen+Cologne" }
+    ],
+    "experiences": [
+      { "name": "Reichstag dome at sunset", "city": "Berlin", "map": "https://maps.google.com/?q=Reichstag+Building" },
+      { "name": "Beer garden afternoon", "city": "Munich", "map": "https://maps.google.com/?q=Augustiner+Keller+Munich" },
+      { "name": "Night Watchman Tour", "city": "Rothenburg", "map": "https://maps.google.com/?q=Marktplatz+Rothenburg" },
+      { "name": "Rhine river castle cruise", "city": "Rhine Valley", "map": "https://maps.google.com/?q=KD+Rhine+cruise" },
+      { "name": "Philosophers' Way walk", "city": "Heidelberg", "map": "https://maps.google.com/?q=Philosophenweg+Heidelberg" },
+      { "name": "Bastei Bridge hike", "city": "Dresden", "map": "https://maps.google.com/?q=Bastei+Bridge" }
+    ],
+    "apps": [
+      { "name": "DB Navigator", "purpose": "Trains, tickets, real-time delays" },
+      { "name": "BVG (Berlin) / MVG (Munich)", "purpose": "Local public transit" },
+      { "name": "Google Maps (offline)", "purpose": "Download Germany before you go" },
+      { "name": "Google Translate", "purpose": "Camera mode for menus" },
+      { "name": "Too Good To Go", "purpose": "Cheap surplus food from bakeries" }
+    ]
+  },
+  "tips": [
+    { "title": "Trains", "body": "Buy ICE tickets on bahn.de — 'Sparpreis' fares can be €19 if booked early. Validate nothing — just board." },
+    { "title": "Cash", "body": "Many smaller restaurants and bakeries still only accept CASH. Always carry €50–100." },
+    { "title": "Sundays", "body": "Almost ALL shops closed on Sundays (except in train stations). Plan groceries accordingly." },
+    { "title": "Tipping", "body": "Round up or add 5–10%. Tell the server the total when paying, don't leave coins on the table." },
+    { "title": "Tap water", "body": "Safe everywhere — but Germans rarely drink it. Asking for 'Leitungswasser' may get a raised eyebrow." },
+    { "title": "Recycling", "body": "Pfand: bottles have a deposit (€0.08–0.25). Return at supermarket machines." },
+    { "title": "Crossing streets", "body": "Germans wait for the green man even with no cars. Jaywalking gets dirty looks (and fines)." },
+    { "title": "Connectivity", "body": "EU roaming works seamlessly with most EU SIMs. Buy a Vodafone CallYa or O2 prepaid SIM if from outside EU." }
+  ],
+  "essentials": {
+    "packing": [
+      "Walking shoes (broken in)",
+      "Light rain jacket — sudden showers common",
+      "European plug adapter (Type F)",
+      "Refillable water bottle",
+      "Daypack",
+      "Layers — June can swing 12°C to 28°C"
+    ],
+    "documents": [
+      "Passport (6mo+ validity)",
+      "Travel insurance",
+      "Hotel confirmations (offline)",
+      "Train tickets (DB Navigator app)",
+      "Neuschwanstein ticket confirmation",
+      "Reichstag dome confirmation"
+    ]
+  }
+}
